@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+}
+
+.header-content {
+    display: flex;
+    background-color: #333333;
+    color: white;
+    padding: 10px;
+    height: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+}
+
+nav a {
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+
+main {
+    display: grid;
+    height: 300px;
+}
+
+#main-content {
+    background-color: #cccccc;
+    grid-column: 1 / 4;
+}
+
+#aside-content {
+    background-color: #ffffff;
+    grid-column: 4 / 6;
+}
+
+footer {
+    background-color: #333333;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    height: 150px;
+}
