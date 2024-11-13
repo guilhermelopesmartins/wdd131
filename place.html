@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Place</title>
+    <meta name="description" content="About us page">
+    <meta name="author" content="Guilherme Lopes Martins">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Madagascar</h1>
+    </header>
+    <main>
+        <section id="one-lemur">
+            <img src="images/one-lemur.jpg" alt="lemur alone" width="100%" height="100%">
+        </section>
+        <section id="data-section" class="container">
+            <div class="title-div">
+                <h1>Data</h1>
+            </div>
+            <div>
+                <label><b>Area:</b></label>
+                <label>587,041 sq km</label>
+            </div>
+            <div>
+                <label><b>Population:</b></label>
+                <label>27,691,018</label>
+            </div>
+            <div>
+                <label><b>Capital:</b></label>
+                <label>Antananaviro</label>
+            </div>
+            <div>
+                <label><b>Languages:</b></label>
+                <label>Malagasy, French</label>
+            </div>
+            <div>
+                <label><b>Time Zone:</b></label>
+                <label>UTC+3</label>
+            </div>
+            <div>
+                <label><b>Calling Code:</b></label>
+                <label>+261</label>
+            </div>
+            <div>
+                <label><b>Internet TLD:</b></label>
+                <label>.mg</label>
+            </div>
+        </section>
+        <section id="weather-section" class="container">
+            <div class="title-div">
+                <h1>Weather</h1>
+                <img id="icon-large" src="images/weather-icon.png" alt="icon of the weather" width="90" height="90">
+            </div>
+            <img id="icon-cell" src="images/weather-icon.png" alt="icon of the weather" width="150" height="150">
+            <div>
+                <label><b>Temperature:</b></label>
+                <label id="temperature"></label>
+            </div>
+            <div>
+                <label><b>Conditions:</b></label>
+                <label>Partly Cloudy</label>
+            </div>
+            <div>
+                <label><b>Wind:</b></label>
+                <label id="wind-speed"></label>
+            </div>
+            <div>
+                <label><b>Wind Chill:</b></label>
+                <label id="wind-chill"></label>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>@2024 | Guilherme Martins | Brasil</p>
+        <p class="last-date">Last Modification: <b id="last-modification"> </b></p>
+    </footer>
+</body>
+</html>

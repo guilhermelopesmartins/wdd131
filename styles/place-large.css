@@ -1,0 +1,48 @@
+@media only screen and (min-width:650px)  {
+    #one-lemur {
+        display: none;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 2fr 2fr;
+        background-image: url("/images/two-lemurs.jpg");
+        background-size: cover;
+    }
+    .container {
+        background-color: rgba(255, 255, 255, 0.671);
+        padding: 10px;
+        margin: 20px;
+        padding-bottom: 20px;
+    }
+    #data-section {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    #weather-section {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    #icon-large {
+        display: block;
+    }
+    
+    #icon-cell {
+        display: none;
+    }
+    .title-div {
+        background-color: #00784ad5;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 250px;
+        padding: 10px;
+        margin-left: -20px;
+        margin-bottom: 20px;
+    }
+}
