@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review - WDD131</title>
+    <meta name="description" content="Product Review">
+    <meta name="author" content="Guilherme Lopes Martins">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form id="form" action="review.html" method="get">
+            <label for="">Product</label>
+            <select id="product_select" required name="" id="">
+                <option selected disabled="true">Select a product</option>
+            </select>
+            <label for="">Overall Rating</label>
+            <ul class="rate-ul">
+                <li>
+                    <label for="star1">☆</label><br>
+                    <input required type="radio" id="star1" name="rating" value="☆">
+                </li>
+                <li>
+                    <label for="star2">☆☆</label><br>
+                    <input required type="radio" id="star2" name="rating" value="☆☆">
+                </li>
+                <li>
+                    <label for="star3">☆☆☆</label><br>
+                    <input required type="radio" id="star3" name="rating" value="☆☆☆">
+                </li>
+                <li>
+                    <label for="star4">☆☆☆☆</label><br>
+                    <input required type="radio" id="star4" name="rating" value="☆☆☆☆">
+                </li>
+                <li>
+                    <label for="star5">☆☆☆☆☆</label><br>
+                    <input required type="radio" id="star5" name="rating" value="☆☆☆☆☆">
+                </li>
+            </ul>
+            <label for="date">Date of installation</label>
+            <input type="date" name="installation_date" id="installation_date">
+            <label for="">Which features do you find useful in the product?</label><br>
+            <label for="">(Check all that apply)</label>
+            <ul class="ul-check">
+                <li>
+                    <input type="checkbox" name="checkbox" id="durability" value="durability">
+                    <label for="durability">Durability</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="checkbox" id="easeofuse" value="ease of use">
+                    <label for="easeofuse">Ease of use</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="checkbox" id="performance" value="performance">
+                    <label for="performance">Performance</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="checkbox" id="design" value="design">
+                    <label for="design">Design</label>
+                </li>
+            </ul>
+            <label for="review_text">Write a review <span>(Optional)</span></label>
+            <textarea name="review_text" id="review_text"></textarea>
+            <label for="name">Your Name <span>(Optional)</span></label>
+            <input type="text" id="name">
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>@2024 | Guilherme Martins | Brasil</p>
+        <p class="last-date">Last Modification: <b id="last-modification"> </b></p>
+    </footer>
+</body>
+</html>
