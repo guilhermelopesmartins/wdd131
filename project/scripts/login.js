@@ -5,5 +5,5 @@ document.getElementById('login-btn').addEventListener('click', () => {
         alert('Name or Password wrong, try again.');
         return;
     }
-    window.location.replace("home.html");
+    window.location.href = "home.html";
 });
