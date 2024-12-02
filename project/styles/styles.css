@@ -125,7 +125,7 @@ tr:nth-child(even) {
 dialog {
     border: 1px solid var(--main-color);
     border-radius: 50px;
-    width: 350px;
+    width: 250px;
 }
 
 body {
