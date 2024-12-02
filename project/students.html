@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home">
+    <meta name="author" content="Guilherme Lopes Martins">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/style-large.css">
+    <script type="module" src="scripts/students.js" defer></script>
+    <script src='https://kit.fontawesome.com/1944f62a56.js' crossorigin='anonymous'></script>
+    <title>Students</title>
+</head>
+<body>
+    <button class="menu-button" id="menuButton" onclick="toggleSidebar()">☰</button>
+    <div class="sidebar" id="sidebar">
+        <a href="home.html">Home</a>
+        <a href="medicine.html">Medicine</a>
+    </div>
+    <header>
+        <h1>Sick students record</h1>
+    </header>
+    <main>
+        <div>
+            <table id="table">
+            </table>
+            <button id="add-student">Add</button>
+        </div>
+        <dialog id="student-dialog">
+            <div class="form">
+                <label for="name">Name</label>
+                <input type="text" id="new-name">
+                <label for="date">Date</label>
+                <input type="date" id="new-date">
+                <label for="medicine-options">Medicine taken</label>
+                <select name="medicine-options" id="medicine-options">
+                    <option value="non">Nothing</option>
+                </select>
+                <div>
+                    <button id="cancel-student" class="cancel-button">Cancel</button>
+                    <button id="save-student">Save</button>
+                </div>
+            </div>
+        </dialog>
+    </main>
+    <footer>
+        <p>&copy; Cumorah Academy 2024</p>
+    </footer>
+</body>
+</html>

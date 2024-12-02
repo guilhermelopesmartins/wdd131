@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sick day</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="description" content="Tell your leaders that you are sick">
+    <meta name="author" content="Guilherme Lopes Martins">
+</head>
+<body>
+    <header>
+        <h1>Sick day</h1>
+    </header>
+    <main>
+        <div class="form">
+            <label for="name">Name</label>
+            <input id="name" type="text">
+            <label for="room">Room</label>
+            <input id="room" type="text">
+            <select name="house" id="house">
+                <option value="Esther">Esther</option>
+                <option value="Isaiah">Isaiah</option>
+                <option value="Moroni">Moroni</option>
+                <option value="Nephi">Nephi</option>
+                <option value="Ruth">Ruth</option>
+            </select>
+            <label for="help_checkbox">Do you need any help</label>
+            <input type="checkbox" name="help_checkbox" id="help_checkbox">
+            <textarea name="help_description" id="help_description"></textarea>
+            <label for="doc_appointment">Doctor appointment</label>
+            <select name="appointment_situation" id="appointment_situation">
+                <option value="Scheduled">Scheduled</option>
+                <option value="Appointment done">Appointment done</option>
+                <option value="Not scheduled">Not scheduled</option>
+            </select>
+            <button id="btn_send">Send</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Cumorah Academy 2024</p>
+    </footer>
+    <script src="{{ url_for('static', filename='formController.js') }}"></script>
+</body>
+</html>

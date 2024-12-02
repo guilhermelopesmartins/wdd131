@@ -94,7 +94,7 @@ small.addEventListener('click', () => {
 
 
 function generateCards (filter) {
-    templeSection.innerHTML = '';
+      
     temples.forEach(t => {
         if (filter == 'n' && parseInt(t.dedicated.split(',')[0]) <= 2000)
             return;
