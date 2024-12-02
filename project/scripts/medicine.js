@@ -38,8 +38,6 @@ document.getElementById("save-medicine").addEventListener("click", () => {
 
 function loadTable(key) {
     const data = controller.getFromLocalStorage(key);
-    if (data.length === 0)
-        return;
     const table = document.getElementById('table');
     table.innerHTML = '';
     const tr = document.createElement('tr');
@@ -49,7 +47,8 @@ function loadTable(key) {
         tr.appendChild(th);    
     });
     table.appendChild(tr);
-
+    if (data.length === 0)
+        return;
     data.forEach(resp => {
         const tr = document.createElement('tr');
         const name = document.createElement('td');

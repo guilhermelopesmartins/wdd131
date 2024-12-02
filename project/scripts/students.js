@@ -4,6 +4,18 @@ const studentsKey = 'students';
 
 loadTable(studentsKey);
 
+const arrayMedicine = controller.getFromLocalStorage('medicine');
+const medicineSelect = document.getElementById('medicine-options');
+const defaultOption = document.createElement('option');
+defaultOption.value = 'Nothing';
+defaultOption.textContent = 'Nothing';
+arrayMedicine.forEach(m => {
+    const option = document.createElement('option');
+    option.value = m.name;
+    option.textContent = `${m.name} - ${m.price}`
+    medicineSelect.appendChild(option);
+})
+
 document.getElementById("add-student").addEventListener("click", () => {
     const dialog = document.getElementById("student-dialog");
     dialog.value = 0;
@@ -38,8 +50,6 @@ document.getElementById("save-student").addEventListener("click", () => {
 
 function loadTable(key) {
     const data = controller.getFromLocalStorage(key);
-    if (data.length === 0)
-        return;
     const table = document.getElementById('table');
     table.innerHTML = '';
     const tr = document.createElement('tr');
@@ -50,6 +60,8 @@ function loadTable(key) {
     });
     table.appendChild(tr);
 
+    if (data.length === 0)
+        return;
     data.forEach(resp => {
         const tr = document.createElement('tr');
         const name = document.createElement('td');
