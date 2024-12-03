@@ -1,6 +1,6 @@
 :root {
-    --main-color: rgba(49, 128, 160, 1);
-    --second-color: rgb(38, 107, 134);
+    --main-color: #3180a0;
+    --second-color: #266B86;
 }
 
 body {
@@ -56,6 +56,7 @@ input[type=submit]:hover {
 .form {
     padding: 20px;
     width: 60%;
+    max-width: 500px;
 }
 
 dialog .form {
@@ -67,6 +68,7 @@ main, header, footer {
     display: flex;
     justify-content: space-around;
 }
+
 
 #help_description {
     display: none;
@@ -129,7 +131,7 @@ dialog {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", serif;
     margin: 0;
 }
 
