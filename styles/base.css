@@ -1,0 +1,89 @@
+:root {
+    --primary-color: #174e70;
+}
+
+* {
+    margin: 0;
+}
+
+.header-content {
+    display: flex;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-content h1 b {
+    color: #feff4c;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+}
+
+nav a {
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#main-content {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#aside-content {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: gray 1px solid;
+    border-radius: 50px;
+    margin: 10px;
+    align-items: center;
+}
+
+.container > h2 {
+    background-color: var(--primary-color);
+    color: white;
+    display: block;
+}
+
+footer {
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    height: 150px;
+}
+
+.side-content {
+    display: flex;
+    margin: 30px;
+    gap: 20px;
+}
+
+.last-date {
+    color: #feff4c;
+}
+
+.aside-list {
+    grid
+}

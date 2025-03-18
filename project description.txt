@@ -1,0 +1,15 @@
+A website for Cumorah Academy that keeps the record of the medice avaliable and its prices and students that gets sick. The studts will be able to see and ask for the medicine avaliable when they filling the medical absence form.
+
+The website will count with three diferent pages, they are:
+1. Login:
+    The members of the staff will be able to access the system with their accounts throw this page.
+
+2. Medicine page:
+    List of medicine and their prices and description
+    Popup form to add and edit medicine
+    Delete button
+
+3. Sick days log:
+    List of the students that get sick, with their information such as if they needed help that day or if they request any medicine
+    Popup form to add or edit some student (if for some reason they didn't fill the form)
+    Delete button     

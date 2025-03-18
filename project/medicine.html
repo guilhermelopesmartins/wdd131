@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home">
+    <meta name="author" content="Guilherme Lopes Martins">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/style-large.css">
+    <script type="module" src="scripts/medicine.js" defer></script>
+    <script src='https://kit.fontawesome.com/1944f62a56.js' crossorigin='anonymous'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Medicine</title>
+</head>
+<body>
+    <button class="menu-button" id="menuButton" onclick="toggleSidebar()">☰</button>
+    <div class="sidebar" id="sidebar">
+        <a href="home.html">Home</a>
+        <a href="students.html">Students</a>
+    </div>
+    <header>
+        <h1>Medicine record</h1>
+    </header>
+    <main>
+        <div>
+            <table id="table">
+            </table>
+            <button id="add-medicine">Add</button>
+        </div>
+        <dialog id="medicine-dialog">
+            <div class="form">
+                <label for="name">Name</label>
+                <input type="text" id="new-name">
+                <label for="new-description">Description</label>
+                <textarea id="new-description"></textarea>
+                <label for="new-price">Price</label>
+                <input type="number" name="new-price" id="new-price">
+                <div>
+                    <button id="cancel-medicine" class="cancel-button">Cancel</button>
+                    <button id="save-medicine">Save</button>
+                </div>
+            </div>
+        </dialog>
+    </main>
+    <footer>
+        <p>&copy; Cumorah Academy 2024</p>
+    </footer>
+</body>
+</html>
